@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  dash:
+    container_name: ssurgo-stat-dash
+    restart: always
+    build:
+      context: .
+      dockerfile: dash.dockerfile
+    command: "python show.py"
+    ports:
+      - "8050:8050"
+
+networks:
+  proxynet:
+    name: docker_network
