@@ -38,15 +38,15 @@ docker-compose up -d --build
 visit https://localhost:8050/
 
 You can see stats for each column:
-type - type of column [str, int, float]
-empty - in which states there is no values in this column
-rows - total row count per state
-val\_cnt - count not empty occurance
-minv - min value for int, float column
-maxv - max value for int, float column
-unique\_vals - how many unique values are in this column
-duplicates - is there are any duplicates per state
-type\_ok - can values from this column can be easily cast to db schema
+- type - type of column [str, int, float]
+- empty - in which states there is no values in this column
+- rows - total row count per state
+- val\_cnt - count not empty occurance
+- minv - min value for int, float column
+- maxv - max value for int, float column
+- unique\_vals - how many unique values are in this column
+- duplicates - is there are any duplicates per state
+- type\_ok - can values from this column can be easily cast to db schema
 
 
 
